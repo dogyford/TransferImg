@@ -70,6 +70,7 @@ function move_file($path_file){
  * @param $path_dir
  */
 function scan_dir($path_dir){
+    if (!is_dir($path_dir)) return false;
     $rs = scandir($path_dir);
     foreach ($rs as $k => $v){
         if ($v === '.' || $v === '..') continue;
