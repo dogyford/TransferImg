@@ -6,6 +6,9 @@
  * Time: 16:39
  */
 
+
+exit('stop');
+
 set_time_limit(0);
 global $source_dir;
 global $target_dir;
